@@ -1,0 +1,23 @@
+Date				Details							Due Date
+Sun Apr 12, 2020	Assignment 	Quiz over Ch 1 & videos (SLO 1.1, 1.2, 1.4)				due by 11:59pm
+		Assignment 	Critical Thinking Exercise (SLO 1.3)				due by 11:59pm
+Sun Apr 19, 2020	Assignment 	Quiz over this week's readings (SLO 2.1-2.2)			due by 11:59pm
+		Assignment 	Using a grading rubric to assess a sample research paper (SLO 2.3)	due by 11:59pm
+Sun Apr 26, 2020	Assignment 	Wk3 Quiz over Chapter 4 & 5 (SLO 3.1-3.2)			due by 11:59pm
+		Assignment 	Requirements Engineering paper				due by 11:59pm
+Sun May 3, 2020	Assignment 	Quiz over reading for the week (SLO4.1-4.3)			due by 11:59pm
+Sun May 10, 2020	Assignment 	Quiz over Ch 9 readings (SLO 5.1-5.2)				due by 11:59pm
+		Assignment 	Evaluating a Data Management Life Cycle model (SLO 5.1)		due by 11:59pm
+Sun May 17, 2020	Assignment 	Quiz over readings (SLO 6.1-6.3)				due by 11:59pm
+Sun May 24, 2020	Assignment 	Big Data quiz (SLO 7.1 & 7.2)					due by 11:59pm
+		Assignment 	Big Data and Social Media					due by 11:59pm
+Sun May 31, 2020	Assignment 	System Thinking quiz (SLO 8.1-8.2)				due by 11:59pm
+Sun Jun 7, 2020	Assignment 	Course Evaluations						due by 11:59pm
+		Assignment 	Quiz over SA & Troubleshooting (SLO 9.1, 9.3)			due by 11:59pm
+		Assignment 	Troubleshooting a Problem (SLO 9.2)				due by 11:59pm
+Fri Jun 12, 2020	Assignment 	MIS 311 Final Exam						due by 11:59pm
+		Assignment 	Wk 10 SDLC quiz over lecture (SLO 10.1 - 10.3)			due by 11:59pm
+Sun Jan 10, 2021	Assignment 	MIS 311 Wk1 Ch1 Quiz					due by 11:59pm
+Sun Jan 24, 2021	Assignment 	MIS 311 Wk3 Ch3 Quiz					due by 11:59pm
+Sun Jan 31, 2021	Assignment 	Creating a Fully Dressed Use Case Narrative			due by 11:59pm
+		Assignment 	Navigating this course in Canvas	
