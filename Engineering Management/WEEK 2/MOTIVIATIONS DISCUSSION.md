@@ -1,5 +1,7 @@
 ## DISCUSSION ON MOTIVIATIONS
 
+*Assignment:  Based on this week's discussion around what motivates engineers within company, find an article or example of good leadership and describe what characteristics you see as important to good leadership within an organization. Use your post to provide interesting information to your colleagues. Your initial post should be about 500 words. Include reference citations as needed. Look at the discussion rubric to see how your contribution will be assessed.*
+
 Article: How Does Work Motivation Impact Employees’ Investment at Work and Their Job Engagement? A Moderated-Moderation Perspective Through an International Lens
 
 In reality employees are already motivated. This is often by the simple things like the need of money or fulfilment in a career. So as a managing body you are in charge of figuring out how to tap into that motivation to accomplish work goals and further invest employees into their jobs.
