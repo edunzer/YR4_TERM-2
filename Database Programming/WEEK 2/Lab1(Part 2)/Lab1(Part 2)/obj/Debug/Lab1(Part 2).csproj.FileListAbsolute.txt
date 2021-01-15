@@ -1,0 +1,9 @@
+G:\2-COLLEGE-\YR4_TERM-2\Database Programming\WEEK 2\Lab1(Part 2)\Lab1(Part 2)\bin\Debug\Lab1(Part 2).exe.config
+G:\2-COLLEGE-\YR4_TERM-2\Database Programming\WEEK 2\Lab1(Part 2)\Lab1(Part 2)\bin\Debug\Lab1(Part 2).exe
+G:\2-COLLEGE-\YR4_TERM-2\Database Programming\WEEK 2\Lab1(Part 2)\Lab1(Part 2)\bin\Debug\Lab1(Part 2).pdb
+G:\2-COLLEGE-\YR4_TERM-2\Database Programming\WEEK 2\Lab1(Part 2)\Lab1(Part 2)\obj\Debug\Lab1_Part_2_.Form1.resources
+G:\2-COLLEGE-\YR4_TERM-2\Database Programming\WEEK 2\Lab1(Part 2)\Lab1(Part 2)\obj\Debug\Lab1_Part_2_.Properties.Resources.resources
+G:\2-COLLEGE-\YR4_TERM-2\Database Programming\WEEK 2\Lab1(Part 2)\Lab1(Part 2)\obj\Debug\Lab1(Part 2).csproj.GenerateResource.cache
+G:\2-COLLEGE-\YR4_TERM-2\Database Programming\WEEK 2\Lab1(Part 2)\Lab1(Part 2)\obj\Debug\Lab1(Part 2).csproj.CoreCompileInputs.cache
+G:\2-COLLEGE-\YR4_TERM-2\Database Programming\WEEK 2\Lab1(Part 2)\Lab1(Part 2)\obj\Debug\Lab1(Part 2).exe
+G:\2-COLLEGE-\YR4_TERM-2\Database Programming\WEEK 2\Lab1(Part 2)\Lab1(Part 2)\obj\Debug\Lab1(Part 2).pdb
