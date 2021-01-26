@@ -1,0 +1,10 @@
+G:\2-COLLEGE-\YR4_TERM-2\Database Programming\WEEK 3-4\LAB2-P2\LAB2-P2\bin\Debug\LAB2-P2.exe.config
+G:\2-COLLEGE-\YR4_TERM-2\Database Programming\WEEK 3-4\LAB2-P2\LAB2-P2\bin\Debug\LAB2-P2.exe
+G:\2-COLLEGE-\YR4_TERM-2\Database Programming\WEEK 3-4\LAB2-P2\LAB2-P2\bin\Debug\LAB2-P2.pdb
+G:\2-COLLEGE-\YR4_TERM-2\Database Programming\WEEK 3-4\LAB2-P2\LAB2-P2\obj\Debug\LAB2-P2.csprojAssemblyReference.cache
+G:\2-COLLEGE-\YR4_TERM-2\Database Programming\WEEK 3-4\LAB2-P2\LAB2-P2\obj\Debug\LAB2_P2.Form1.resources
+G:\2-COLLEGE-\YR4_TERM-2\Database Programming\WEEK 3-4\LAB2-P2\LAB2-P2\obj\Debug\LAB2_P2.Properties.Resources.resources
+G:\2-COLLEGE-\YR4_TERM-2\Database Programming\WEEK 3-4\LAB2-P2\LAB2-P2\obj\Debug\LAB2-P2.csproj.GenerateResource.cache
+G:\2-COLLEGE-\YR4_TERM-2\Database Programming\WEEK 3-4\LAB2-P2\LAB2-P2\obj\Debug\LAB2-P2.csproj.CoreCompileInputs.cache
+G:\2-COLLEGE-\YR4_TERM-2\Database Programming\WEEK 3-4\LAB2-P2\LAB2-P2\obj\Debug\LAB2-P2.exe
+G:\2-COLLEGE-\YR4_TERM-2\Database Programming\WEEK 3-4\LAB2-P2\LAB2-P2\obj\Debug\LAB2-P2.pdb
