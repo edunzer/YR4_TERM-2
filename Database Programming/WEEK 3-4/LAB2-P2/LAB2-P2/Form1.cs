@@ -14,9 +14,6 @@ namespace LAB2_P2
     public partial class Form1 : Form
     {
 
-        SqlConnection con = new SqlConnection(@"Data Source=DESKTOP-DK99MGG; Initial Catalog=TECHSUPPORT ; Integrated Security=True;");
-        SqlCommand cmd;
-
         public Form1()
         {
             InitializeComponent();
@@ -76,30 +73,30 @@ namespace LAB2_P2
 
         private void btnAdd_Click(object sender, EventArgs e)
         {
-            /*
-            var CustomerName = nameTextBox.Text;
-            var CustomerDate = dateOpenedDateTimePicker.Text;
-            var CustomerProduct = comboBox1.Text;
-            var CustomerTitle = titleTextBox.Text;
-            var CustomerDescription = descriptionTextBox.Text;
-            
-           
-            this.incidentsBindingSource.AddNew();
 
+            int CustomerID = Convert.ToInt32(customerIDTextBox.Text);
+            var DateOpened = Convert.ToDateTime(dateOpenedDateTimePicker.Text);
+            var ProductName = comboBox1.Text;
+            var ProductCode = Convert.ToString(this.productsTableAdapter.FillByProductCodeFind(this.tECHSUPPORTDataSet.Products, ProductName));
+            var Title = titleTextBox.Text;
+            var Description = descriptionTextBox.Text;
+
+            this.incidentsTableAdapter.InsertQuery(CustomerID, DateOpened, Title, Description, ProductCode);
+            
+            /*
             try
             {
-                this.incidentsTableAdapter.Fill(this.tECHSUPPORTDataSet.Incidents);
+                this.incidentsTableAdapter.InsertQuery(CustomerID, ProductCode, DateOpened, Title, Description);
+
+                MessageBox.Show("Update successful." + Convert.ToString(CustomerID) + "Has been added to the incidents table.");
+                MessageBox.Show(Convert.ToString(CustomerID) + " " + Convert.ToString(DateOpened) + " " + Convert.ToString(ProductName) + " " + Convert.ToString(ProductCode) + " " + Convert.ToString(Title) + " " + Convert.ToString(Description));
+
             }
-            catch
+            catch (System.Exception)
             {
-                MessageBox.Show("Database error");
+                MessageBox.Show("Update failed");
             }
             */
-            con.Open();
-            cmd = new SqlCommand("INSERT INTO Incidents VALUES('"+customerIDTextBox.Text+"','" + nameTextBox.Text + "','" + dateOpenedDateTimePicker.Text + "','NULL','" + comboBox1.Text + "','" + titleTextBox.Text + "','" + descriptionTextBox.Text + "')",con);
-            cmd.ExecuteNonQuery();
-            MessageBox.Show("Data has been saved in database");
-            con.Close();
         }
 
         public void ClearTextBoxes(Control.ControlCollection ctrlCollection)
