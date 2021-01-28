@@ -1,0 +1,18 @@
+Employee has a special risk scenario.
+They contact the company (I2C2) about the scenario through phones, texting, emails, or written messages.
+The Employee specifies their employee identification, location, client, scenario, location, needs. 
+Request is sent to Carter Dammert (leader of MWRE) through the software application. 
+Then based on the information the software determines what level of emergency provider is needed. 
+A plan is chosen based on the needs and information given by the employee.
+Plan is sent to Carter Dammert pending his approval. 
+He approves the plan. 
+Provider(s) is then picked from the database that organizes them by ability, and credentials.
+The plan is sent to said provider(s). pending approval. 
+Changes are made if need be and then agreed on.
+Then final agreement from provider(s). 
+MWRE takes the request and processes it.
+After processing the final request is sent to all involved parties (employee, Carter, providers, etc.).
+Final agreement from all involved parties. 
+Request completes and is then put into action according to the agreed upon information given to all parties. 
+Then MWRE periodically monitors the location of both the employee and the evacuation team, at least hourly, during each step of the evacuation until the employee had been successfully evacuated, is safe, and received the necessary medical care.
+After this MWRE would record any final notes and communicate with all relevant stakeholders in order to close out the request.

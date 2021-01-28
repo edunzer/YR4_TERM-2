@@ -1,0 +1,25 @@
+11. The provider(s) does not agree 
+	11.1. The provider then inquires about what needs to change.
+	11.2. The plan is then finalized according to changes.
+	11.3. The plan is then sent to provider(s) again pending approval.
+	11.4. The plan is approved by provider(s).
+	11.5. INTO step 12
+
+7. The plan is rejected by Carter Dammert
+	7.1. Carter then inquires about what needs to change in the plan. 
+	7.2. The plan is then finalized according to changes.
+	7.3. The plan is then approved by Carter. 
+	7.4. INTO step 9
+
+10. The request is rejected because the provider is not available.
+	10.1. The system then recognizes the rejected request by said provider. 
+	10.2. The system them finds replacement for provider. 
+	10.3. Then sends a request to the new provider pending approval. 
+	10.4. INTO step 12
+
+4. The request is terminated because the employee circumstances change.
+	4.1. Employee states the reason for the change.
+	4.2. If the change still requires involvement from the company then new request is started.
+	4.3. Employee gives new details for there scenario
+	4.4. INTO step 5
+
