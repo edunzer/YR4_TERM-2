@@ -2601,8 +2601,8 @@ SELECT IncidentID, CustomerID, ProductCode, DateOpened, DateClosed, Title, Descr
             this._commandCollection[1].Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@CustomerID", global::System.Data.SqlDbType.Int, 4, global::System.Data.ParameterDirection.Input, 0, 0, "CustomerID", global::System.Data.DataRowVersion.Current, false, null, "", "", ""));
             this._commandCollection[2] = new global::System.Data.SqlClient.SqlCommand();
             this._commandCollection[2].Connection = this.Connection;
-            this._commandCollection[2].CommandText = "SELECT        ProductCode, Name\r\nFROM            Products\r\nWHERE        (Name = @" +
-                "ProductName)";
+            this._commandCollection[2].CommandText = "SELECT        ProductCode\r\nFROM            Products\r\nWHERE        (Name = @Produc" +
+                "tName)";
             this._commandCollection[2].CommandType = global::System.Data.CommandType.Text;
             this._commandCollection[2].Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@ProductName", global::System.Data.SqlDbType.VarChar, 50, global::System.Data.ParameterDirection.Input, 0, 0, "Name", global::System.Data.DataRowVersion.Current, false, null, "", "", ""));
         }

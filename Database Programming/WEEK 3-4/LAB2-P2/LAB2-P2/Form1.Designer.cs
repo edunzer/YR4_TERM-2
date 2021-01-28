@@ -50,7 +50,6 @@ namespace LAB2_P2
             this.customerIDTextBox = new System.Windows.Forms.TextBox();
             this.nameTextBox = new System.Windows.Forms.TextBox();
             this.incidentsBindingSource = new System.Windows.Forms.BindingSource(this.components);
-            this.dateOpenedDateTimePicker = new System.Windows.Forms.DateTimePicker();
             this.productsBindingSource = new System.Windows.Forms.BindingSource(this.components);
             this.titleTextBox = new System.Windows.Forms.TextBox();
             this.descriptionTextBox = new System.Windows.Forms.TextBox();
@@ -58,6 +57,7 @@ namespace LAB2_P2
             this.btnAdd = new System.Windows.Forms.Button();
             this.btnCancel = new System.Windows.Forms.Button();
             this.btnExit = new System.Windows.Forms.Button();
+            this.txtbxDateOpened = new System.Windows.Forms.TextBox();
             customerIDLabel = new System.Windows.Forms.Label();
             nameLabel = new System.Windows.Forms.Label();
             dateOpenedLabel = new System.Windows.Forms.Label();
@@ -92,7 +92,7 @@ namespace LAB2_P2
             // dateOpenedLabel
             // 
             dateOpenedLabel.AutoSize = true;
-            dateOpenedLabel.Location = new System.Drawing.Point(22, 136);
+            dateOpenedLabel.Location = new System.Drawing.Point(22, 131);
             dateOpenedLabel.Name = "dateOpenedLabel";
             dateOpenedLabel.Size = new System.Drawing.Size(74, 13);
             dateOpenedLabel.TabIndex = 5;
@@ -145,6 +145,7 @@ namespace LAB2_P2
             // 
             // tstxtbxCustomerID
             // 
+            this.tstxtbxCustomerID.Font = new System.Drawing.Font("Segoe UI", 9F);
             this.tstxtbxCustomerID.Name = "tstxtbxCustomerID";
             this.tstxtbxCustomerID.Size = new System.Drawing.Size(100, 25);
             // 
@@ -196,6 +197,7 @@ namespace LAB2_P2
             this.customerIDTextBox.ReadOnly = true;
             this.customerIDTextBox.Size = new System.Drawing.Size(200, 20);
             this.customerIDTextBox.TabIndex = 3;
+            this.customerIDTextBox.TextChanged += new System.EventHandler(this.customerIDTextBox_TextChanged);
             // 
             // nameTextBox
             // 
@@ -211,15 +213,6 @@ namespace LAB2_P2
             this.incidentsBindingSource.DataMember = "Incidents";
             this.incidentsBindingSource.DataSource = this.tECHSUPPORTDataSet;
             // 
-            // dateOpenedDateTimePicker
-            // 
-            this.dateOpenedDateTimePicker.DataBindings.Add(new System.Windows.Forms.Binding("Value", this.incidentsBindingSource, "DateOpened", true));
-            this.dateOpenedDateTimePicker.Enabled = false;
-            this.dateOpenedDateTimePicker.Location = new System.Drawing.Point(111, 130);
-            this.dateOpenedDateTimePicker.Name = "dateOpenedDateTimePicker";
-            this.dateOpenedDateTimePicker.Size = new System.Drawing.Size(200, 20);
-            this.dateOpenedDateTimePicker.TabIndex = 6;
-            // 
             // productsBindingSource
             // 
             this.productsBindingSource.DataMember = "Products";
@@ -228,6 +221,7 @@ namespace LAB2_P2
             // titleTextBox
             // 
             this.titleTextBox.DataBindings.Add(new System.Windows.Forms.Binding("Text", this.incidentsBindingSource, "Title", true));
+            this.titleTextBox.Enabled = false;
             this.titleTextBox.Location = new System.Drawing.Point(111, 182);
             this.titleTextBox.Name = "titleTextBox";
             this.titleTextBox.Size = new System.Drawing.Size(293, 20);
@@ -236,6 +230,7 @@ namespace LAB2_P2
             // descriptionTextBox
             // 
             this.descriptionTextBox.DataBindings.Add(new System.Windows.Forms.Binding("Text", this.incidentsBindingSource, "Description", true));
+            this.descriptionTextBox.Enabled = false;
             this.descriptionTextBox.Location = new System.Drawing.Point(111, 208);
             this.descriptionTextBox.Multiline = true;
             this.descriptionTextBox.Name = "descriptionTextBox";
@@ -248,6 +243,7 @@ namespace LAB2_P2
             this.comboBox1.DataBindings.Add(new System.Windows.Forms.Binding("SelectedItem", this.productsBindingSource, "Name", true));
             this.comboBox1.DataSource = this.productsBindingSource;
             this.comboBox1.DisplayMember = "Name";
+            this.comboBox1.Enabled = false;
             this.comboBox1.FormattingEnabled = true;
             this.comboBox1.Location = new System.Drawing.Point(111, 155);
             this.comboBox1.Name = "comboBox1";
@@ -256,6 +252,7 @@ namespace LAB2_P2
             // 
             // btnAdd
             // 
+            this.btnAdd.Enabled = false;
             this.btnAdd.Location = new System.Drawing.Point(167, 375);
             this.btnAdd.Name = "btnAdd";
             this.btnAdd.Size = new System.Drawing.Size(75, 23);
@@ -266,6 +263,7 @@ namespace LAB2_P2
             // 
             // btnCancel
             // 
+            this.btnCancel.Enabled = false;
             this.btnCancel.Location = new System.Drawing.Point(248, 375);
             this.btnCancel.Name = "btnCancel";
             this.btnCancel.Size = new System.Drawing.Size(75, 23);
@@ -284,11 +282,20 @@ namespace LAB2_P2
             this.btnExit.UseVisualStyleBackColor = true;
             this.btnExit.Click += new System.EventHandler(this.btnExit_Click);
             // 
+            // txtbxDateOpened
+            // 
+            this.txtbxDateOpened.Location = new System.Drawing.Point(111, 128);
+            this.txtbxDateOpened.Name = "txtbxDateOpened";
+            this.txtbxDateOpened.ReadOnly = true;
+            this.txtbxDateOpened.Size = new System.Drawing.Size(200, 20);
+            this.txtbxDateOpened.TabIndex = 17;
+            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(443, 424);
+            this.Controls.Add(this.txtbxDateOpened);
             this.Controls.Add(this.btnExit);
             this.Controls.Add(this.btnCancel);
             this.Controls.Add(this.btnAdd);
@@ -299,14 +306,13 @@ namespace LAB2_P2
             this.Controls.Add(this.titleTextBox);
             this.Controls.Add(nameLabel1);
             this.Controls.Add(dateOpenedLabel);
-            this.Controls.Add(this.dateOpenedDateTimePicker);
             this.Controls.Add(nameLabel);
             this.Controls.Add(this.nameTextBox);
             this.Controls.Add(customerIDLabel);
             this.Controls.Add(this.customerIDTextBox);
             this.Controls.Add(this.toolStrip1);
             this.Name = "Form1";
-            this.Text = "Form1";
+            this.Text = "Incident Form";
             this.Load += new System.EventHandler(this.Form1_Load);
             this.toolStrip1.ResumeLayout(false);
             this.toolStrip1.PerformLayout();
@@ -334,7 +340,6 @@ namespace LAB2_P2
         private System.Windows.Forms.TextBox nameTextBox;
         private System.Windows.Forms.BindingSource incidentsBindingSource;
         private TECHSUPPORTDataSetTableAdapters.ProductsTableAdapter productsTableAdapter;
-        private System.Windows.Forms.DateTimePicker dateOpenedDateTimePicker;
         private System.Windows.Forms.BindingSource productsBindingSource;
         private System.Windows.Forms.TextBox titleTextBox;
         private System.Windows.Forms.TextBox descriptionTextBox;
@@ -342,6 +347,7 @@ namespace LAB2_P2
         private System.Windows.Forms.Button btnAdd;
         private System.Windows.Forms.Button btnCancel;
         private System.Windows.Forms.Button btnExit;
+        private System.Windows.Forms.TextBox txtbxDateOpened;
     }
 }
 
