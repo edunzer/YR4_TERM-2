@@ -1,0 +1,10 @@
+G:\2-COLLEGE-\YR4_TERM-2\Database Programming\WEEK 6\LAB3\LAB3\bin\Debug\LAB3.exe.config
+G:\2-COLLEGE-\YR4_TERM-2\Database Programming\WEEK 6\LAB3\LAB3\bin\Debug\LAB3.exe
+G:\2-COLLEGE-\YR4_TERM-2\Database Programming\WEEK 6\LAB3\LAB3\bin\Debug\LAB3.pdb
+G:\2-COLLEGE-\YR4_TERM-2\Database Programming\WEEK 6\LAB3\LAB3\obj\Debug\LAB3.csprojAssemblyReference.cache
+G:\2-COLLEGE-\YR4_TERM-2\Database Programming\WEEK 6\LAB3\LAB3\obj\Debug\LAB3.FormRegistrationAdd.resources
+G:\2-COLLEGE-\YR4_TERM-2\Database Programming\WEEK 6\LAB3\LAB3\obj\Debug\LAB3.Properties.Resources.resources
+G:\2-COLLEGE-\YR4_TERM-2\Database Programming\WEEK 6\LAB3\LAB3\obj\Debug\LAB3.csproj.GenerateResource.cache
+G:\2-COLLEGE-\YR4_TERM-2\Database Programming\WEEK 6\LAB3\LAB3\obj\Debug\LAB3.csproj.CoreCompileInputs.cache
+G:\2-COLLEGE-\YR4_TERM-2\Database Programming\WEEK 6\LAB3\LAB3\obj\Debug\LAB3.exe
+G:\2-COLLEGE-\YR4_TERM-2\Database Programming\WEEK 6\LAB3\LAB3\obj\Debug\LAB3.pdb
