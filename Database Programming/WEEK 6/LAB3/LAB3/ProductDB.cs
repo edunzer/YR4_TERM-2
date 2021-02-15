@@ -13,8 +13,10 @@ namespace LAB3
         public static void GetProducts(Product product)
         {
             SqlConnection conn = TechSupportDB.GetConnection();
-            string FindProducts = "SELECT Name, ProductCode FROM Products";
+            string FindProducts = "SELECT ProductCode FROM Products WHERE Name=@Name";
             SqlCommand cmd = new SqlCommand(FindProducts, conn);
+
+            cmd.Parameters.AddWithValue("@Name", product.Name);
 
             try
             {

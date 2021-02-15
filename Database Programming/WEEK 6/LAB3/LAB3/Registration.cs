@@ -8,29 +8,29 @@ namespace LAB3
 {
     public class Registration
     {
-        private string strCustomerName;
-        private string strProductName;
+        private int strCustomerID;
+        private string strProductCode;
         private string dateRegistrationDate;
 
         public Registration() { }
 
-        public Registration(string p, string c, string r)
+        public Registration(string p, int c, string r)
         {
-            ProdName = p;
-            CustName = c;
+            ProdCode = p;
+            CustID = c;
             RegDate = r;
         }
 
-        public string ProdName
+        public int CustID
         {
-            get { return strProductName; }
-            set { strProductName = value; }
+            get { return strCustomerID; }
+            set { strCustomerID = value; }
         }
 
-        public string CustName
+        public string ProdCode
         {
-            get { return strCustomerName; }
-            set { strCustomerName = value; }
+            get { return strProductCode; }
+            set { strProductCode = value; }
         }
 
         public string RegDate 

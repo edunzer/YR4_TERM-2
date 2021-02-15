@@ -8,12 +8,12 @@ namespace LAB3
 {
     public class Customer
     {
-        private string strCustomerID;
+        private int strCustomerID;
         private string strName;
 
         public Customer() { }
 
-        public Customer(string c, string n)
+        public Customer(int c, string n)
         {
             Name = n;
             CustID = c;
@@ -25,7 +25,7 @@ namespace LAB3
             set { strName = value; }
         }
 
-        public string CustID
+        public int CustID
         {
             get { return strCustomerID; }
             set { strCustomerID = value; }

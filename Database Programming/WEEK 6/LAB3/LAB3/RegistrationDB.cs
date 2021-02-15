@@ -14,14 +14,14 @@ namespace LAB3
         {
             SqlConnection conn = TechSupportDB.GetConnection();
 
-            string strInsert = "INSERT INTO Registration " + 
-                "(CustomerID, Product, RegistrationDate)" +
-                "Values (@Name, @Product, @Date)";
+            string strInsert = "INSERT INTO Registrations " + 
+                "(CustomerID, ProductCode, RegistrationDate)" +
+                "Values (@CustomerID, @ProductCode, @Date)";
 
             SqlCommand cmd = new SqlCommand(strInsert, conn);
 
-            cmd.Parameters.AddWithValue("@Name", registration.CustName);
-            cmd.Parameters.AddWithValue("@Product", registration.ProdName);
+            cmd.Parameters.AddWithValue("@CustomerID", registration.CustID);
+            cmd.Parameters.AddWithValue("@ProductCode", registration.ProdCode);
             cmd.Parameters.AddWithValue("@Date", registration.RegDate);
 
             try

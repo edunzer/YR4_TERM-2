@@ -10,16 +10,22 @@ namespace LAB3
 {
     class CustomerDB
     {
+
         public static void GetCustomers(Customer customer)
         {
+
             SqlConnection conn = TechSupportDB.GetConnection();
-            string FindCustomers = "SELECT CustomerID, Name FROM Customers";
+            string FindCustomers = "SELECT CustomerID FROM Customers WHERE Name=@Name";
             SqlCommand cmd = new SqlCommand(FindCustomers, conn);
+
+            cmd.Parameters.AddWithValue("@Name", customer.Name);
+
 
             try
             {
                 conn.Open();
-                cmd.ExecuteReader();
+                string CustomerCode = Convert.ToString(cmd.ExecuteScalar());
+                
             }
             catch (Exception ex)
             {
@@ -29,6 +35,7 @@ namespace LAB3
             {
                 conn.Close();
             }
+
         }
     }
 }
