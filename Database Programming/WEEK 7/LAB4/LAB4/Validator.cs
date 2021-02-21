@@ -49,6 +49,5 @@ namespace LAB4
             }
             return true;
         }
-
     }
 }

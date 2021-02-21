@@ -60,7 +60,6 @@ namespace LAB4
                 }
                 txtbxScores.Text = total;
             }
-
         }
 
         private bool IsValidData()

@@ -4,6 +4,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.IO;
+using System.Windows.Forms;
 
 namespace LAB4
 {
@@ -28,20 +29,17 @@ namespace LAB4
 
                     scoresList += (value + "|");
                 }
-
                 textOut.Write(student.Name + "|");
-                textOut.WriteLine(scoresList.TrimEnd(','));
+                textOut.WriteLine(scoresList.TrimEnd('|'));
             }
             textOut.Close();
         }
 
         public static List<Student> GetStudents()
         {
-            
             if (!Directory.Exists(dir))
                 Directory.CreateDirectory(dir);
             
-
             StreamReader textIn =
                 new StreamReader(
                 new FileStream(path, FileMode.OpenOrCreate, FileAccess.Read));
@@ -58,7 +56,50 @@ namespace LAB4
 
                 if (columns[1] != "")
                 {
-                    int[] scoreArray = columns[1].Split(',').Select(n => Convert.ToInt32(n)).ToArray();
+                    foreach (string item in columns)
+                    {
+                        for (int i = 1; i < item.Count(); i++)
+                        {
+                            int[] scoreArray = columns[i].Split('|').Select(n => Convert.ToInt32(n)).ToArray();
+                            scoreList = scoreArray.ToList();
+                        }
+                    }
+                    student.ScoreList = scoreList;
+                }
+                else
+                {
+                    student.ScoreList = new List<int>();
+                }
+                student.Name = columns[0];
+                students.Add(student);
+            }
+            textIn.Close();
+            return students;
+        }
+
+        // ------------------- UNFINSIHED -------------------
+        public static List<Student> GetScores(string name)
+        {
+            if (!Directory.Exists(dir))
+                Directory.CreateDirectory(dir);
+
+            StreamReader textIn =
+                new StreamReader(
+                new FileStream(path, FileMode.OpenOrCreate, FileAccess.Read));
+
+            List<Student> students = new List<Student>();
+
+            while (textIn.Peek() != -1)
+            {
+                string row = textIn.ReadLine();
+                string[] columns = row.Split('|');
+                Student student = new Student();
+
+                List<int> scoreList = new List<int>();
+
+                if (columns[1] != "" && row.Contains(name))
+                {
+                    int[] scoreArray = columns[1].Split('|').Select(n => Convert.ToInt32(n)).ToArray();
 
                     scoreList = scoreArray.ToList();
                     student.ScoreList = scoreList;
@@ -67,21 +108,14 @@ namespace LAB4
                 {
                     student.ScoreList = new List<int>();
                 }
-
-                student.Name = columns[0];
                 students.Add(student);
-
             }
-
             textIn.Close();
-
             return students;
         }
 
-        
         public static void LoadSampleStudents()
         {
-
             if (!Directory.Exists(dir))
             {
                 Directory.CreateDirectory(dir);
@@ -89,7 +123,6 @@ namespace LAB4
 
             if (!File.Exists(path))
             {
-
                 StreamWriter textOut =
                 new StreamWriter(
                 new FileStream(path, FileMode.Create, FileAccess.Write));
@@ -101,7 +134,5 @@ namespace LAB4
                 textOut.Close();
             }
         }
-        
     }
-
 }

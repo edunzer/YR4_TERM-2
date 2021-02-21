@@ -114,7 +114,6 @@ namespace LAB4
                     txtboxScoreTotal.Text = Convert.ToString(total);
                     txtbxScoreCount.Text = Convert.ToString(count);
                     txtbxAverage.Text = average.ToString("#.##");
-
                 }
             }
         }
