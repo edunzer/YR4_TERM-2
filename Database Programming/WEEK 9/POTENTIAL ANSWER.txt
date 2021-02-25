@@ -1,0 +1,46 @@
+/* prime2.C only worked for primes less than 10. An undetected
+overflow caused the program to give bogus answers. We must fix that by
+computing a^b % n without actually calculating a^b. The idea is to use
+the following property:
+
+(a * b) % n = ((a % n) * (b % n)) % n
+*/
+
+#include <iostream.h>
+#include <stdlib.h>
+#include <math.h>
+
+int fermatTest (int n) {
+int a, result, i;
+
+a = rand() % n;
+cout << "Trying with " << a << endl;
+// return (a == (int(pow(a,n)) % n)); bad way
+result = 1;
+i = n;
+while (i > 0) {
+result = (result * a) % n;
+i = i-1;
+}
+return (a == result);
+}
+
+int main () {
+int n, i;
+cout << "Enter a natural number: ";
+cin >> n;
+cout << "How many trials?: ";
+cin >> i;
+srand(n*i);
+while (i > 0) {
+if (fermatTest(n)) {
+i = i-1;
+}
+else {
+cout << "The number " << n << " is definitely not prime." << endl;
+return(0);
+}
+}
+cout << "The number " << n << " is probably prime." << endl;
+return(0);
+}

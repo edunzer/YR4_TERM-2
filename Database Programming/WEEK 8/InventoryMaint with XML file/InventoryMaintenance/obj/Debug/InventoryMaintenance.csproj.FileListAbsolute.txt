@@ -44,3 +44,14 @@ C:\C# 2015\Extra exercises\Exercise starts\Chapter 22\InventoryMaintenance with 
 C:\C# 2015\Extra exercises\Exercise starts\Chapter 22\InventoryMaintenance with XML file\InventoryMaintenance\obj\Debug\InventoryMaintenance.frmInvMaint.resources
 C:\C# 2015\Extra exercises\Exercise starts\Chapter 22\InventoryMaintenance with XML file\InventoryMaintenance\obj\Debug\InventoryMaintenance.Properties.Resources.resources
 C:\C# 2015\Extra exercises\Exercise starts\Chapter 22\InventoryMaintenance with XML file\InventoryMaintenance\obj\Debug\InventoryMaintenance.csproj.GenerateResource.Cache
+G:\2-COLLEGE-\YR4_TERM-2\Database Programming\WEEK 8\InventoryMaint with XML file\InventoryMaintenance\bin\Debug\InventoryMaintenance.exe.config
+G:\2-COLLEGE-\YR4_TERM-2\Database Programming\WEEK 8\InventoryMaint with XML file\InventoryMaintenance\bin\Debug\InventoryMaintenance.exe
+G:\2-COLLEGE-\YR4_TERM-2\Database Programming\WEEK 8\InventoryMaint with XML file\InventoryMaintenance\bin\Debug\InventoryMaintenance.pdb
+G:\2-COLLEGE-\YR4_TERM-2\Database Programming\WEEK 8\InventoryMaint with XML file\InventoryMaintenance\obj\Debug\InventoryMaintenance.csprojAssemblyReference.cache
+G:\2-COLLEGE-\YR4_TERM-2\Database Programming\WEEK 8\InventoryMaint with XML file\InventoryMaintenance\obj\Debug\InventoryMaintenance.frmNewItem.resources
+G:\2-COLLEGE-\YR4_TERM-2\Database Programming\WEEK 8\InventoryMaint with XML file\InventoryMaintenance\obj\Debug\InventoryMaintenance.frmInvMaint.resources
+G:\2-COLLEGE-\YR4_TERM-2\Database Programming\WEEK 8\InventoryMaint with XML file\InventoryMaintenance\obj\Debug\InventoryMaintenance.Properties.Resources.resources
+G:\2-COLLEGE-\YR4_TERM-2\Database Programming\WEEK 8\InventoryMaint with XML file\InventoryMaintenance\obj\Debug\InventoryMaintenance.csproj.GenerateResource.cache
+G:\2-COLLEGE-\YR4_TERM-2\Database Programming\WEEK 8\InventoryMaint with XML file\InventoryMaintenance\obj\Debug\InventoryMaintenance.csproj.CoreCompileInputs.cache
+G:\2-COLLEGE-\YR4_TERM-2\Database Programming\WEEK 8\InventoryMaint with XML file\InventoryMaintenance\obj\Debug\InventoryMaintenance.exe
+G:\2-COLLEGE-\YR4_TERM-2\Database Programming\WEEK 8\InventoryMaint with XML file\InventoryMaintenance\obj\Debug\InventoryMaintenance.pdb

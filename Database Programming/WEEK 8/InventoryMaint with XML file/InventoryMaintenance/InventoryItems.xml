@@ -2,22 +2,22 @@
 <Items>
     <Item>
         <ItemNo>3245649</ItemNo>
-        <Description>Agapanthus</Description>
+        <Desciption>Agapanthus</Desciption>
         <Price>7.95</Price>
     </Item>
     <Item>
         <ItemNo>3762592</ItemNo>
-        <Description>Limonium</Description>
+        <Desciption>Limonium</Desciption>
         <Price>6.95</Price>
     </Item>
     <Item>
         <ItemNo>9210584</ItemNo>
-        <Description>Snail pellets</Description>
+        <Desciption>Snail pellets</Desciption>
         <Price>12.95</Price>
     </Item>
     <Item>
         <ItemNo>4738459</ItemNo>
-        <Description>Japanese Red Maple</Description>
+        <Desciption>Japanese Red Maple</Desciption>
         <Price>89.95</Price>
     </Item>
 </Items>
