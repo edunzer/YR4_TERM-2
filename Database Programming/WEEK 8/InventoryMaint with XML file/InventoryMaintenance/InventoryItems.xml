@@ -1,0 +1,23 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Items>
+    <Item>
+        <ItemNo>3245649</ItemNo>
+        <Desciption>Agapanthus</Desciption>
+        <Price>7.95</Price>
+    </Item>
+    <Item>
+        <ItemNo>3762592</ItemNo>
+        <Desciption>Limonium</Desciption>
+        <Price>6.95</Price>
+    </Item>
+    <Item>
+        <ItemNo>9210584</ItemNo>
+        <Desciption>Snail pellets</Desciption>
+        <Price>12.95</Price>
+    </Item>
+    <Item>
+        <ItemNo>4738459</ItemNo>
+        <Desciption>Japanese Red Maple</Desciption>
+        <Price>89.95</Price>
+    </Item>
+</Items>
