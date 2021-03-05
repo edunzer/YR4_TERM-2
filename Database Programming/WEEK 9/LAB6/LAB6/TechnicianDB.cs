@@ -6,43 +6,39 @@ using System.Threading.Tasks;
 using System.Data;
 using System.Data.SqlClient;
 using System.Windows.Forms;
+using System.IO;
 
 namespace LAB6
 {
     public class TechnicianDB
     {
+        private const string Path = @"G:\2-COLLEGE-\YR4_TERM-2\Database Programming\WEEK 9\LAB6\LAB6\Technicians.txt";
+
         public static List<Technician> GetTechnicians()
         {
             List<Technician> technician = new List<Technician>();
 
-            SqlConnection conn = DatabaseDB.GetConnection();
-            string select = "SELECT * FROM Technicians";
-            SqlCommand cmd = new SqlCommand(select, conn);
+            StreamReader textin = (new StreamReader(new FileStream(Path, FileMode.OpenOrCreate, FileAccess.Read)));
 
-            try
+            while (textin.Peek() != -1)
             {
-                conn.Open();
-                SqlDataReader reader = cmd.ExecuteReader();
+                string row = textin.ReadLine();
+                string[] columns = row.Split('|');
+                Technician technicians = new Technician();
 
-                while (reader.Read())
+                if (technicians.TechID == null)
                 {
-                    Technician technicians = new Technician();
-
-                    technicians.Name = (string)reader["Name"];
-                    technicians.TechID = (int)reader["TechID"];
-
-                    technician.Add(technicians);
+                    technicians.TechID = null;
                 }
-                reader.Close();
+                else
+                {
+                    technicians.TechID = Convert.ToInt32(columns[0]);
+                }
+                technicians.Name = Convert.ToString(columns[1]);
+
+                technician.Add(technicians);
             }
-            catch (Exception ex)
-            {
-                MessageBox.Show(ex.Message);
-            }
-            finally
-            {
-                conn.Close();
-            }
+            textin.Close();
             return technician;
         }
     }

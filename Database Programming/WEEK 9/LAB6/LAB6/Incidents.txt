@@ -13,6 +13,6 @@
 47|1034|DRAFT10   |13|2/9/2016||Can't activate product|Product activation code invalid.
 48|1049|TRNY20    |11|2/9/2016||Unable to print brackets|Program doesn't recognize printer.
 49|1083|LEAGD10   |14|2/10/2016||Can't start application|Error 521 on startup: database must be reorganized.
-50|1116|DRAFT10   ||2/10/2016||Error during data file backup|Program abends with error 228 during database backup 
+50|1116|DRAFT10   |13|2/10/2016||Error during data file backup|Program abends with error 228 during database backup 
 51|1067|LEAGD10   |12|2/10/2016||Error when adding new records|Received error 340: database exceeds size limit.
 52|1066|TEAM10    ||2/11/2016||Installation problem|Customer states that the setup program failed with code 203 during configuration.

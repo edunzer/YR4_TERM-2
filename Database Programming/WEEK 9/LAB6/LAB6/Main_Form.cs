@@ -10,9 +10,9 @@ using System.Windows.Forms;
 
 namespace LAB6
 {
-    public partial class Form1 : Form
+    public partial class Main_Form : Form
     {
-        public Form1()
+        public Main_Form()
         {
             InitializeComponent();
         }
@@ -34,6 +34,7 @@ namespace LAB6
                                 incident.DateCLosed,
                                 incident.Title
                             };
+   
             string name = null;
             int i = 0;
 
@@ -44,12 +45,14 @@ namespace LAB6
                     lstvItems.Items.Add(lineitem.Name.ToString());
                     lstvItems.Items[i].SubItems.Add(lineitem.ProductCode.ToString());
 
+
                     name = lineitem.Name;
                 }
                 else
                 {
                     lstvItems.Items.Add("");
                     lstvItems.Items[i].SubItems.Add("");
+
                 }
 
                 lstvItems.Items[i].SubItems.Add(lineitem.DateOpened.ToString());

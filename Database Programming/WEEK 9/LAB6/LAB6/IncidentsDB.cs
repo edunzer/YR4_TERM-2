@@ -6,49 +6,59 @@ using System.Threading.Tasks;
 using System.Data;
 using System.Data.SqlClient;
 using System.Windows.Forms;
+using System.IO;
 
 namespace LAB6
 {
     public class IncidentsDB
     {
+        private const string Path = @"G:\2-COLLEGE-\YR4_TERM-2\Database Programming\WEEK 9\LAB6\LAB6\Incidents.txt";
+
         public static List<Incidents> GetIncidents()
         {
             List<Incidents> incidents = new List<Incidents>();
 
-            SqlConnection conn = DatabaseDB.GetConnection();
-            string select = "SELECT * FROM Incidents";
-            SqlCommand cmd = new SqlCommand(select, conn);
+            StreamReader textin = (new StreamReader(new FileStream(Path, FileMode.OpenOrCreate, FileAccess.Read)));
 
-            try
+            while (textin.Peek() != -1)
             {
-                conn.Open();
-                SqlDataReader reader = cmd.ExecuteReader();
+                string row = textin.ReadLine();
+                string[] columns = row.Split('|');
+                Incidents incident = new Incidents();
 
-                while (reader.Read())
+                incident.CustomerID = Convert.ToInt32(columns[0]);
+                incident.IncidentID = Convert.ToInt32(columns[1]);
+                incident.ProductCode = Convert.ToString(columns[2]);
+                if (incident.TechID == null)
                 {
-                    Incidents incident = new Incidents();
-
-                    incident.CustomerID = (int)reader["CustomerID"];
-                    incident.DateCLosed = (DateTime)reader["DateCLosed"];
-                    incident.DateOpened = (DateTime)reader["DateOpened"];
-                    incident.Description = (string)reader["Description"];
-                    incident.IncidentID = (int)reader["IncidentID"];
-                    incident.ProductCode = (int)reader["ProductCode"];
-                    incident.TechID = (int)reader["TechID"];
-                    incident.Title = (string)reader["Title"];
-
-                    incidents.Add(incident);
+                    incident.TechID = null;
                 }
-                reader.Close();
+                else
+                {
+                    incident.TechID = Convert.ToInt32(columns[3]);
+                }
+                if (incident.DateCLosed == null)
+                {
+                    incident.DateCLosed = null;
+                }
+                else
+                {
+                    incident.DateCLosed = Convert.ToDateTime(columns[4]);
+                }
+                if (incident.DateOpened == null)
+                {
+                    incident.DateOpened = null;
+                }
+                else
+                {
+                    incident.DateOpened = Convert.ToDateTime(columns[5]);
+                }
+                incident.Title = Convert.ToString(columns[6]);
+                incident.Description = Convert.ToString(columns[7]);
+
+                incidents.Add(incident);
             }
-            catch (Exception ex)
-            {
-                MessageBox.Show(ex.Message);
-            }
-            finally
-            {
-                conn.Close();
-            }
+            textin.Close();
             return incidents;
         }
     }

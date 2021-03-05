@@ -11,6 +11,6 @@ namespace LAB6
         public Technician() { }
 
         public string Name { get; set; }
-        public int TechID { get; set; }
+        public int? TechID { get; set; }
     }
 }

@@ -1,7 +1,7 @@
 ﻿
 namespace LAB6
 {
-    partial class Form1
+    partial class Main_Form
     {
         /// <summary>
         /// Required designer variable.
@@ -84,7 +84,7 @@ namespace LAB6
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(674, 442);
             this.Controls.Add(this.lstvItems);
-            this.Text = "Form1";
+            this.Text = "Incidents by Technician";
             this.Load += new System.EventHandler(this.Form1_Load);
             this.ResumeLayout(false);
 
