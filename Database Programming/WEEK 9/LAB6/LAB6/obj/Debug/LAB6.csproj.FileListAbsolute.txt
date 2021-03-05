@@ -1,0 +1,10 @@
+G:\2-COLLEGE-\YR4_TERM-2\Database Programming\WEEK 9\LAB6\LAB6\obj\Debug\LAB6.Properties.Resources.resources
+G:\2-COLLEGE-\YR4_TERM-2\Database Programming\WEEK 9\LAB6\LAB6\obj\Debug\LAB6.csproj.GenerateResource.cache
+G:\2-COLLEGE-\YR4_TERM-2\Database Programming\WEEK 9\LAB6\LAB6\obj\Debug\LAB6.csproj.CoreCompileInputs.cache
+G:\2-COLLEGE-\YR4_TERM-2\Database Programming\WEEK 9\LAB6\LAB6\bin\Debug\LAB6.exe.config
+G:\2-COLLEGE-\YR4_TERM-2\Database Programming\WEEK 9\LAB6\LAB6\bin\Debug\LAB6.exe
+G:\2-COLLEGE-\YR4_TERM-2\Database Programming\WEEK 9\LAB6\LAB6\bin\Debug\LAB6.pdb
+G:\2-COLLEGE-\YR4_TERM-2\Database Programming\WEEK 9\LAB6\LAB6\obj\Debug\LAB6.exe
+G:\2-COLLEGE-\YR4_TERM-2\Database Programming\WEEK 9\LAB6\LAB6\obj\Debug\LAB6.pdb
+G:\2-COLLEGE-\YR4_TERM-2\Database Programming\WEEK 9\LAB6\LAB6\obj\Debug\LAB6.csprojAssemblyReference.cache
+G:\2-COLLEGE-\YR4_TERM-2\Database Programming\WEEK 9\LAB6\LAB6\obj\Debug\LAB6.Main_Form.resources
